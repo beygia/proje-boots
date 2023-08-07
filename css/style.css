@@ -1,0 +1,264 @@
+@font-face {
+    font-family: vazir;
+    src: url(../font/vazirmatn-v13-latin-regular.woff2);
+    font-family: barlo;
+    src: url(../font/Barlow-Medium.woff);
+    font-weight: 700;
+}
+
+body{
+    font-family: barlo, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #516171;
+}
+
+a{
+    color: #092032;
+    transition: all .4s ease;
+}
+.bg-cover{
+    /* background-position: center;
+    background-size: cover; */
+}
+
+/* navbar */
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.top-nav{
+    background-color: #ff4d29;
+    padding: 5px 0;
+}
+.top-nav p{
+    display: inline-block;
+    margin-right: 16px;
+    margin-bottom: 0;
+    color: #fff;
+}
+.navbar-nav .link-btn{
+    transition: all .5s ease;
+}
+.navbar-nav .link-btn:hover{
+    border: 1px solid #516171;
+    border-radius: 4px;
+    transition: all .3s ease;
+}
+.social-links a{
+    font-size: 17px;
+    background-color: rgba(255, 255, 255, .4);
+    color: #fff;
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+.social-links a:hover{
+    color: #ff4d29;
+    background-color: #fff;
+}
+
+.btn-brand{
+    background-color: #ff4d29;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+.btn-brand:hover{
+    color: #fff;
+    background-color: #dc3919;
+}
+
+/* slider */
+
+.img-slide{
+    height: 100%;
+    background-position: top !important;
+    background-size: cover !important;
+    background-attachment: fixed;
+    opacity: .4;
+}
+.column{
+    background: rgb(65, 48, 48);
+    max-height: 100vh;
+}
+.conten1{
+    top: 25%;
+}
+.conten2{
+    top: 33%;
+    margin-left: 5%;
+}
+.hover-ico{
+    width: 40px;
+}
+.btn-icon:hover{
+    background-color: #dc3919 !important;
+    transition: all .3s ease;
+}
+
+/* About */
+
+.about-image-left{
+   width: 100px;
+}
+.about-text{
+    /* width: 25em; */
+    margin: 0 auto;
+    
+}
+
+/* Milestone */
+
+#Milestone{
+    background: linear-gradient(rgba(255, 77, 41, 0.894), rgba(119, 44, 29, 0.8)), url(../img/downloadd.jpg);
+    background-position: center;
+    margin-top: 90px;
+}
+#Milestone .display-4, #Milestone p{
+    color: #fff;
+}
+#Milestone .display-4{
+    font-weight: bold;
+}
+
+/* SERVICES */
+
+#Services{
+    margin-top: 160px;
+}
+.intro{
+    margin-bottom: 40px;
+}
+.intro h6{
+    font-weight: 400;
+    color: #ff4d29;
+}
+.intro p{
+    max-width: 500px;
+    margin: auto;
+}
+
+.service-box{
+    padding: 32px;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+.service-box img{
+    width: 12em;
+}
+.service-box h5{
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+.service-box p{
+    font-size: 14px;
+}
+
+/* Portfolio */
+
+#portfolio{
+    margin-top: 140px;
+}
+.project{
+    position: relative;
+    margin-right: 20px;
+}
+.project img{
+    object-fit: cover;
+    object-position: top;
+}
+.project .content{
+    color: #fff;
+    position: absolute;
+    bottom: 28px;
+    left: 20px;
+}
+.project img{
+    width: 29em;
+    height: 22em;
+}
+.project .overlay{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient( rgba(168, 161, 159, 0), rgba(37, 33, 33, 0.8));
+    bottom: 0;
+}
+
+/* Team */
+
+#team{
+    margin-top: 130px;
+}
+.team-member{
+    text-align: center;
+}
+.img-wrapper{
+   
+}
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+}
+.team-member .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background-color: rgba(255, 77, 41, 0.800);
+    opacity: 0;
+    transition: all .4s ease;
+}
+.team-member .social-links{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .4s ease;
+    opacity: 0;
+}
+.img-wrapper:hover .overlay{
+    opacity: 1;
+    height: 100%;
+}
+.img-wrapper:hover .social-links{
+    opacity: 1;
+    top: 50%;
+}
+.team-member h5{
+    margin-top: 24px;
+    font-size: 22px;
+}
+.team-member p{
+    font-size: 13px;
+}
+/* footer */
+
+footer .navbar-brand{
+    color: white;
+    margin-bottom: 24px;
+    display: inline-block;
+}
+footer{
+    background: linear-gradient(rgba(9, 32, 50, 0.8), rgba(9, 32, 50, 0.8)), url(../img/downloadd.jpg);
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.footer-top{
+    margin-bottom: 40px;
+}
+.footer-bottom{
+    border-top: 1px solid rgba(255, 255, 255, 0.267);
+    padding-top: 20px;
+}
